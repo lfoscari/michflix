@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  
+  movies-service:
+    build: ./movies
+    volumes:
+      - ./movies:/usr/src/app
+    ports:
+      - 5001:8080
