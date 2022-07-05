@@ -17,3 +17,7 @@ To start the services run `docker-compose up` in the main directory.
 - [ ] Login with universal password
 - [ ] Multiple qualities of the same movie
 - [ ] Internal player
+
+
+#### Notes
+Use `docker-compose`, not `docker compose`, otherwise the `.env` file is not picked up.

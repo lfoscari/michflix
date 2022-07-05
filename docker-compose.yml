@@ -2,9 +2,28 @@ version: "3"
 
 services:
   
-  movies-service:
-    build: ./movies
+  library-api:
+    build: ./library-api
     volumes:
-      - ./movies:/usr/src/app
+      - ./library-api:/usr/src/app
+
+    environment:
+      - REDIS_ENDPOINT
+      - REDIS_USERNAME
+      - REDIS_PASSWORD
+
     ports:
       - 5001:8080
+
+  # movie-library:
+  #   image: "redis:alpine"
+  #   command: redis-server --requirepass michflix
+    
+  #   volumes:
+  #     - $PWD/redis-data:/var/lib/redis
+  #     - $PWD/redis.conf:/usr/local/etc/redis/redis.conf
+  #   ports:
+  #   - 6379:6379
+
+  #   environment:
+  #     - REDIS_REPLICATION_MODE=master
