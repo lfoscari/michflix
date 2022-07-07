@@ -20,4 +20,4 @@ To start the services run `docker-compose up` in the main directory.
 
 
 #### Notes
-Use `docker-compose`, not `docker compose`, otherwise the `.env` file is not picked up.
+MongoBD offers the possibilty to access the data with a [REST API](https://www.mongodb.com/atlas/app-services/data-api), might be a good idea to initially use this solution to handle the database connection.
