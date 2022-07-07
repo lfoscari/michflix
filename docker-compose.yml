@@ -8,9 +8,10 @@ services:
       - ./library-api:/usr/src/app
 
     environment:
-      - REDIS_ENDPOINT
-      - REDIS_USERNAME
-      - REDIS_PASSWORD
+      - MONGODB_ENDPOINT
+      - MONGODB_USERNAME
+      - MONGODB_PASSWORD
+      - MONGODB_DATABASE
 
     # ports:
     #   - 5001:8080
