@@ -12,8 +12,8 @@ services:
       - REDIS_USERNAME
       - REDIS_PASSWORD
 
-    ports:
-      - 5001:8080
+    # ports:
+    #   - 5001:8080
 
   # movie-library:
   #   image: "redis:alpine"
